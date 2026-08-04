@@ -6388,14 +6388,38 @@ blockquote {
 }
 
 .off-t-hero-img {
-  background-image: url("/assets/cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67dc366b25025ea1a39995c4_ln4-off-t-hero-img.webp");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(135deg, #1a1226 0%, #2d1f4a 50%, #1a1226 100%);
   width: 52.125rem;
   height: 60rem;
   position: absolute;
   inset: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.off-t-hero-img::before {
+  content: "MR";
+  font-family: 'Mona Sans', 'Bricolage Grotesque', system-ui, sans-serif;
+  font-size: clamp(12rem, 25vw, 22rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  background: linear-gradient(135deg, rgba(205, 186, 255, 0.15) 0%, rgba(205, 186, 255, 0.05) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  position: absolute;
+}
+
+.off-t-hero-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 40%, rgba(130, 102, 255, 0.12) 0%, transparent 50%),
+              radial-gradient(circle at 70% 70%, rgba(76, 203, 131, 0.08) 0%, transparent 40%);
+  pointer-events: none;
 }
 
 .impact-text-w {
