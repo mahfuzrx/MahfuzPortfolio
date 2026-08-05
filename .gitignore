@@ -4,3 +4,4 @@ node_modules/
 *.BROKEN.webp
 __pycache__/
 .playwright-mcp/
+.vercel
